@@ -1,2 +1,2 @@
 # find_path
-python, jps find path
+python实现跳点寻路算法（jps）
