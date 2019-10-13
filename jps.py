@@ -102,8 +102,8 @@ class JPS:
         if now == self.e_pos:
             return now
 
-        # if self.is_pass(now[0], now[1]) is False:
-        #     return None
+        if self.is_pass(now[0], now[1]) is False:
+            return None
         if dir[0] != 0 and dir[1] != 0:
             # 左下能走且左不能走，或右上能走且上不能走
             if (self.is_pass(now[0] - dir[0], now[1] + dir[1]) and not self.is_pass(now[0]-dir[0], now[1])) or (self.is_pass(now[0] + dir[0], now[1] - dir[1]) and not self.is_pass(now[0], now[1]-dir[1])):
